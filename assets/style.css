@@ -1,0 +1,294 @@
+body {
+    font-family: "Helvetica" !important;
+}
+
+.sec-hero {
+    background-image: url("images/Hero\ Image.png");
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+}
+
+.sec-hero button.cta {
+    border: 2px solid white;
+    border-radius: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 0px 10px 5px;
+    margin-top: 220px;
+}
+
+.sec-hero button.cta i {
+    font-size: 22px;
+}
+
+.color-blue {
+    color: #112f52;
+}
+
+.bg-blue {
+    background-color: #112f52 !important;
+}
+
+h1.heading {
+    font-family: "Georgia";
+    font-size: 355%;
+}
+
+h1.sub-heading {
+    font-family: "Georgia";
+    font-size: 280%;
+}
+
+.pt-7 {
+    padding-top: 5rem !important;
+}
+
+.pb-7 {
+    padding-bottom: 5rem !important;
+}
+
+.with-divider {
+    width: fit-content;
+    border-bottom: 1px solid #8cc220;
+}
+
+.divider-blue {
+    border-bottom-color: #112f52 !important;
+}
+
+.color-green {
+    color: #8cc220 !important;
+}
+
+.br-1 {
+    border-right: 1px solid;
+}
+
+.br-green {
+    border-color: #8cc22040;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bg-lightgray {
+    background-color: #e1e1e1;
+}
+
+.bg-light-blue {
+    background-color: #112f52a9;
+}
+
+.sec-dev .img-block {
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    display: grid;
+    align-items: end;
+    font-weight: 600;
+}
+
+.sec-dev .bg-img1 {
+    background-image: url("images/dev-bg-img1.jpg");
+}
+
+.sec-dev .bg-img2 {
+    background-image: url("images/dev-bg-img2.jpg");
+}
+
+.sec-dev .bg-img3 {
+    background-image: url("images/dev-bg-img3.jpg");
+}
+
+.sec-dev .bg-light-blue {
+    margin-top: 190px;
+}
+
+.b-r-0 {
+    border-radius: 0 !important;
+}
+
+.font-12 {
+    font-size: 1.3rem !important;
+}
+
+.bg-gray {
+    background-color: #3b4552;
+}
+
+.bg-green {
+    background-color: #8cc220 !important;
+}
+
+.carousel-control-prev {
+    left: -100px !important;
+}
+
+.carousel-control-next {
+    right: -100px !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    font-size: 50px;
+    top: -80px !important;
+}
+
+.carousel-item {
+    margin-right: 0 !important;
+}
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+ /* Bootstrap Lightbox using Modal */
+
+#profile-grid { 
+    overflow: auto; white-space: normal; 
+}
+
+#profile-grid .profile { 
+    padding-bottom: 40px; 
+}
+
+#profile-grid .panel { 
+    padding: 0;
+}
+
+#profile-grid .panel-body { 
+    padding: 15px; 
+}
+
+#profile-grid .profile-name { 
+    font-weight: bold; 
+}
+
+#profile-grid .thumbnail {
+    margin-bottom:6px;
+}
+
+#profile-grid .panel-thumbnail { 
+    overflow: hidden; 
+}
+
+#profile-grid .img-rounded { 
+    border-radius: 4px 4px 0 0;
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+}
+
+.sec-half-img .bg-img.bg-partners {
+    background-image: url("images/Partners\ Photo.png");
+}
+
+.sec-half-img .bg-img.bg-planet {
+    background-image: url("images/Planet\ Photo.png");
+}
+
+.sec-half-img .bg-img.bg-profit {
+    background-image: url("images/Profit\ Photo.png");
+}
+
+.bg-skyblue {
+    background-color: #deeaed;
+}
+
+.font-weight-semibold {
+    font-weight: 500 !important;
+}
+
+.place-center {
+    place-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-contact {
+    background-image: url("images/contact-image.png");
+}
+
+.bg-light-green {
+    background-color: #8cc220ab;
+}
+
+input[type=checkbox], input[type=radio] {
+    height: 20px;
+    width: 20px;
+}
+
+.list-style-none {
+    list-style-type: none;
+    margin-left: -40px;
+}
